@@ -1,4 +1,3 @@
-import { FaTimes } from 'react-icons/fa'
 
 const TaskTemplate = ({ task, onDelete, onToggle }) => {
   return (
@@ -8,7 +7,7 @@ const TaskTemplate = ({ task, onDelete, onToggle }) => {
     >
       <h3>
         {task.text}{' '}
-        <FaTimes
+        <button
           style={{ color: 'red', cursor: 'pointer' }}
           onClick={() => onDelete(task.id)}
         />
