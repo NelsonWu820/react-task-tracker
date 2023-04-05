@@ -1,9 +1,11 @@
 import Header from './components/Header';
+import AddTasks from './components/AddTasks';
 
 function App() {
   return (
-    <div className="header">
+    <div className="App">
       <Header/>     
+      <AddTasks/>
     </div>
   );
 }
