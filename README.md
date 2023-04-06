@@ -1,1 +1,1 @@
-Basic test problems for react
+This is a web app coded and designed by Nelson Wu, running on JavaScript, HTML, ans CSS. Using React to create a dynamic user interface, where the user can add tasks with the date that the task is due. Although this isn't a full stack application, it only runs on the browser and won't update a JSON file, just yet.
