@@ -4,7 +4,14 @@ import Tasks from './components/Tasks';
 import { useState } from 'react';
 
 function App() {
-  const [tasks, setTasks] = useState([]) 
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      text: "Vacuum",
+      day: "May 6th at 5:00PM",
+      reminder: true
+    }
+  ]) 
   
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1
