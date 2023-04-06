@@ -4,6 +4,7 @@ import Tasks from './components/Tasks';
 import { useState } from 'react';
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(true)
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -22,10 +23,11 @@ function App() {
   const onDelete = (id) => { 
     setTasks(tasks.filter((task) => task.id !== id))
   }
+
   return (
     <div className="App">
-      <Header/>     
-      <AddTasks onAdd={addTask}/>
+      <Header changeTaskForm={() => setShowAddTask(!showAddTask)} showAddTask={showAddTask}/>     
+      { showAddTask && <AddTasks onAdd={addTask}/>}
       <Tasks onDelete={onDelete} tasks={tasks}/>
     </div>
   );
