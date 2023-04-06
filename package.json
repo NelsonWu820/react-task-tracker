@@ -3,6 +3,8 @@
   "name": "react-task-tracker",
   
   "version": "0.1.0",
+
+  "homepage": "https://nelsonwu820.github.io/react-task-tracker/",
   
   "private": true,
   
@@ -38,6 +40,8 @@
   
     
   "start": "react-scripts start",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   
     
   "build": "react-scripts build",
@@ -105,6 +109,13 @@
   
     
   ]
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "gh-pages": "^5.0.0"
   
   }
 }
