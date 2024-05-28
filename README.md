@@ -1,5 +1,4 @@
 # Task Tracker
----place gif
 
 # Description
 Using React to create a dynamic user interface allowing users to seamlessly add tasks along with their respective due dates. This application operates solely within the browser environment, omitting the need for backend operations such as updating JSON files or interacting with databases.
